@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search|Dream College Library</title>
+    <link rel="stylesheet" href="css/search.css">
+    <script src="js/Animation.js"></script>
+</head>
+<body>
+    <header>
+        <div class="loginHeader"><a href="index.html"><img src="src/logo/login-logo.png" alt=""></a></div>
+        <div class="headerBlank"></div>
+        <div class="loginBtn">
+            <a href="login.html"><button type="button" id="loginBtn" onclick="login.html">Login</button></a>
+        </div>
+    </header>
+    <div class="searchArea">
+        <div class="blueBlank"></div>
+        <form action="search.html">
+            <div class="formAction">
+                <input type="text" name="searchArea" id="formText" placeholder="Search anything">
+                <select name="subject" id="subjectSearch">
+                    <option value="general" selected="selected">General Search</option>
+                    <option value="book">Book & Media</option>
+                    <option value="database">Database</option>
+                    <option value="journal">Journal</option>
+                </select>
+                <input type="submit" id="submitBtn" value="Search">
+            </div>
+        </form>
+        <div class="blueBlank"></div>
+    </div>
+    <div class="col">
+        <div class="filterCol">
+            <div class="sort">
+                <span class="sortTitle">Sort by</span>
+                <select name="subject" id="subjectSort">
+                    <option value="relevance" selected="selected">Relevance</option>
+                    <option value="newest">Date-newest</option>
+                    <option value="oldest">Date-oldest</option>
+                    <option value="title">Title</option>
+                    <option value="author">Author</option>
+                </select>
+            </div>
+            <div class="availability">
+                <button class="accordion" onclick="accordion(event)">Availability</button>
+                <div class="panel">
+                    <input type="checkbox" name="availability[]" value="online">Available online<br>
+                    <input type="checkbox" name="availability[]" value="open">Open Accesse<br>
+                    <input type="checkbox" name="availability[]" value="peer">Peer-reviewed Journal<br>
+                    <input type="checkbox" name="availability[]" value="physical">Physical Item<br>
+                </div>
+            </div>
+            <div class="resource">
+                <button class="accordion" onclick="accordion(event)">Resource Type</button>
+                <div class="panel">
+                    <input type="checkbox" name="resource[]" value="artical">Articles<br>
+                    <input type="checkbox" name="resource[]" value="audio">Audio<br>
+                    <input type="checkbox" name="resource[]" value="chapter">Book Chapters<br>
+                    <input type="checkbox" name="resource[]" value="book">Books & eBooks<br>
+                    <div><a href="">Show More</a></div>
+                </div>
+            </div>
+            <div class="date">
+                <button class="accordion" onclick="accordion(event)">Publication Date</button>
+                <div class="panel datePanel">
+                    <div>
+                        <span class="dateTitle">From</span>
+                        <input type="number" min="1801" max="2024" step="1" value="1801" id="inputStartDate">
+                    </div>
+                    <div>
+                        <span class="dateTitle">To</span>
+                        <input type="number" min="1801" max="2024" step="1" value="2024" id="inputEndDate">
+                    </div>
+
+                </div>
+            </div>
+            <button class="accordion" onclick="accordion(event)">Subject</button>
+            <div class="panel"></div>
+            <button class="accordion" onclick="accordion(event)">Author/Creator</button>
+            <div class="panel"></div>
+        </div>
+        <div class="resultCol">
+            <div class="listItem">
+                <div class="listItemCount">1</div>
+                <div class="listItemImg">
+                    <a href=""><img src="src/img/tableau.jpg" alt="" srcset=""></a>
+                </div>
+                <div class="listItemDetail">
+                    <span class="itemTitle">
+                        <a href=""><h3>Learning Tableau 2022 : create effective data visualizations, build interactive visual analytics, and improve your data storytelling capabilities ; Fifth edition.</h3></a>
+                        <span>Milligan, Joshua N., author.</span><br>
+                        <span>Birmingham, England : Packt Publishing, Limited; 2022</span>
+                        <div class="itemAvailability">
+                            <img class="itemIcon" src="src/icon/link.png" alt="">
+                            <a href="src/icon/link.png">Available online ></a>
+                        </div>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

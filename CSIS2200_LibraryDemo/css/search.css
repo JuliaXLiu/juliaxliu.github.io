@@ -1,0 +1,232 @@
+a, p, span, input, button,option, div{
+    font-family: "Open Sans", sans-serif;
+}
+body{
+    margin: 0px;
+    background-color: rgb(233, 233, 233);
+}
+header{
+    background-color: #002452;
+    display: flex;
+    justify-content: space-between;
+}
+
+.loginHeader a img{
+    height: 35px;
+    margin:15px;
+
+}
+
+#loginBtn{
+    height: 100%;
+    width: 100px;
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: #002452;
+    color: white;
+    border: none;
+    font-size: larger;
+}
+
+#loginBtn:hover{
+    background-color: white;
+    color: #002452;
+    border: none;
+}
+
+.searchArea{
+    background-color: #002f5e;
+}
+.blueBlank{
+    background-color: #002f5e;
+    height:20px;
+}
+.formAction{
+    background-color: white;
+    margin-left: 15%;
+    margin-right: 15%;
+    border-radius: 5px;
+}
+
+#formText{
+    height: 50px;
+    width: 67%;
+    padding-left: 20px;
+    padding-right: 5px;
+    margin:auto;
+    font-size: 1.1em;
+    margin-top: 1px;
+    border:none;
+    flex-shrink:1;
+    border-right: lightslategrey 1px solid;
+}
+
+#subjectSearch{
+    height: 50px;
+    width: 20%;
+    padding-left: 10px;
+    border: none;
+    font-size:0.9em;
+    flex-shrink:0;
+}
+
+#submitBtn{
+    height: 50px;
+    border-radius: 5px;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    font-size:1em;
+    flex-shrink:0;
+}
+
+#submitBtn:hover{
+    background-color: #e0f2ff;
+}
+
+.col{
+    display: grid;
+    grid-template-areas: "filter result";
+}
+
+.filterCol{
+    grid-area: filter;
+}
+
+.resultCol{
+    grid-area:result;
+}
+
+.sort{
+    padding: 18px;
+}
+.sortTitle{
+    background-color: #eee;
+    color: #444;
+    text-align: left;
+    width: 100%;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-size:medium;
+    font-weight: 500;
+}
+
+#subjectSort{
+    font-size: medium;
+    margin-left: 20px;
+    padding: 2px;
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-size: larger;
+  }
+  
+.accordion:hover {
+    background-color: #ccc;
+    color:#187474;
+}
+
+.active{
+    color:#187474;
+}
+.panel {
+    padding: 0 20px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+.panel div{
+    margin: 2px 20px;
+}
+  .panel div a{
+    color:#187474;
+    font: 0.8em sans-serif;
+  }
+
+  .accordion:after {
+    content: '+'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+    font-size: larger;
+  }
+  
+  .active:after {
+    content: "-";
+    font-size: larger;
+    color:#187474;
+  }
+
+.datePanel{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.listItem{
+    background-color: #f3f3f3;
+    display: grid;
+    grid-template-areas: "index img detail";
+    width: 80%;
+    margin:auto;
+    grid-template-columns: auto 150px auto;
+}
+
+.listItem:hover{
+    background-color: white;
+}
+
+.listItemCount{
+    grid-area: index;
+    /* width: 40px; */
+    height: 20px;
+    padding: 0px 5px;
+    margin: 20px;
+    border: #777 solid 1px;
+    text-align: center;
+}
+
+.listItemImg{
+    grid-area:img;
+    width: 80%;
+    margin: 30px auto;
+}
+
+.listItemImg a, .listItemImg img{
+    display: block;
+    width: 100%;
+    margin:auto;
+}
+
+.listItemDetail{
+    grid-area: detail;
+    margin: 20px 50px;
+}
+
+.listItemDetail a{
+    color:#187474;
+    display: inline;
+}
+
+.itemAvailability{
+    margin: 5px 0;
+}
+
+.itemAvailability img{
+    width: 15px;
+}
+
+.itemAvailability a{
+    margin: 5px 0;
+}
