@@ -1,0 +1,140 @@
+a, p, span, input, button,option, div{
+    font-family: "Open Sans", sans-serif;
+}
+body{
+    margin: 0px;
+    background-color: rgb(233, 233, 233);
+}
+header{
+    background-color: #002452;
+    display: flex;
+    justify-content: space-between;
+}
+
+.loginHeader a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size:xx-large;
+    padding: 15px;
+
+    
+}
+.headerBtn{
+    height: 100%;
+    padding: 20px;
+    background-color:#002452;
+    color: white;
+    border: none;
+}
+
+.headerBtn:hover{
+    color: #002452;
+    background-color: white;
+}
+
+#dashboardHeader{
+    color:#187474;
+    font-size: x-large;
+    margin: 10px 0;
+}
+
+.dashboard{
+    padding:20px 5%;
+    background-color: white;
+}
+
+.username{
+    color:#187474;
+    text-decoration: none;
+}
+
+.col{
+    display: grid;
+    grid-template-areas: "btn contentTable";
+    grid-template-columns: 20% auto;
+}
+
+.managementBtnList{
+    grid-area: btn;
+    width: 100%;
+}
+
+.contentCol{
+    grid-area: contentTable;
+}
+
+.managementBtnList a{
+    display: block;
+    text-decoration: none;
+    width: 100%;
+}
+
+.managementBtn {
+    width: 100%;
+    height: 60px;
+    text-align: left;
+    padding-left: 10%;
+    border: none;
+}
+
+.managementBtn:hover{
+    background-color: white;
+}
+
+.managementBtn:focus{
+    background-color: #002452;
+    color:white;
+}
+
+.contentCol{
+    width: 99%;
+    margin: 10px auto;
+}
+
+.operationBtnList{
+    display: flex;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+.operationBtn{
+    height: 100%;
+    padding: 20px;
+    border: none;
+}
+
+.operationBtn:hover{
+    color: #002452;
+    background-color: white;
+}
+
+.operationBtn img{
+    width: 20px;
+    margin: -5px 5px;
+    background-color: transparent;
+}
+
+
+.blank{
+    width: 10%;
+}
+
+.resultTable .operationBtn{  
+    padding: 2px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+tr:nth-child(odd) {
+    background-color: white;
+}
+
+th{
+    background-color: white;
+    padding: 5px 2px;
+}
+td{
+    padding: 5px;
+}

@@ -18,5 +18,4 @@ window.onload = function() {
     eles[1].click();
     eles[2].click();
     eles[3].click();
-    console.log(eles)
 };
