@@ -61,7 +61,9 @@ header{
 }
 
 .contentCol{
-    grid-area: contentTable;
+    grid-area: contentTable; 
+    width: 99%;
+    margin: auto;
 }
 
 .managementBtnList a{
@@ -87,15 +89,12 @@ header{
     color:white;
 }
 
-.contentCol{
-    width: 99%;
-    margin: 10px auto;
-}
 
 .operationBtnList{
     display: flex;
-    margin-left: 5px;
-    margin-bottom: 5px;
+    margin-left: 21%;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .operationBtn{

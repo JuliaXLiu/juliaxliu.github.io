@@ -1,0 +1,175 @@
+@charset "utf-8";
+
+/* Structural Styles */
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section {
+  display: block;
+}
+
+/* Typographic Styles */
+address,
+article,
+aside,
+blockquote,
+body,
+cite,
+div,
+dl,
+dt,
+dd,
+em,
+figcaption,
+figure,
+footer,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+html,
+img,
+li,
+main,
+nav,
+ol,
+p,
+section,
+span,
+ul {
+  background: transparent;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+nav ul {
+  list-style: none;
+  list-style-image: none;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+body {
+  line-height: 1;
+}
+
+body {
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+  min-width: 640px;
+  max-width: 1680px;
+}
+
+body > header > img {
+  display: block;
+  width: 100%;
+}
+
+#main {
+  clear:left;
+}
+
+.grid_container{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-areas:  "img img"
+                        "logo intro";
+}
+
+.grid_item {
+  padding: 20px;
+  text-align: center;
+  
+}
+
+.grid_img {
+  grid-area: img;
+  
+}
+.grid_item img{
+  width: 100%; 
+  height: 100%;
+  object-fit: cover;
+}
+
+.grid_logo {
+  grid-area: logo;
+
+}
+
+.grid_intro {
+  grid-area: intro;
+  background-color: pink;
+  margin:20px;
+  padding: 20px;
+  text-align: left;
+}
+
+.flex_container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  justify-content: center;
+  /* justify-content: space-around; */
+  margin: auto;
+
+    
+
+}
+.flex_container img {
+  max-width: 270px;
+  /* max-height:270px; */
+  flex-grow: 1;
+  padding: 1%;
+  border: 1px solid white;
+  margin: 1%;
+}
+
+@media (max-width: 640px){
+
+
+  .grid_container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:  "img"
+                          "intro";
+  }
+
+  .grid_logo img{
+    display:none;
+  }
+
+  .flex_container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    justify-content: center;
+    /* justify-content: space-around; */
+    margin: auto;
+  }
+
+  .flex_container img {
+    max-width: 400px;
+    /* max-height:270px; */
+    flex-grow: 1;
+    padding: 1%;
+    border: 1px solid white;
+    margin: 1%;
+    transition: transform 0.3s ease;
+  }
+}
+

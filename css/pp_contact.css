@@ -1,0 +1,39 @@
+#form{
+    padding-top: 2em;
+    padding-bottom: 4em;
+    width: 90%;
+    color: white;
+    margin:auto;
+    clear:both;
+}
+
+h1{
+    font-weight:bolder;
+}
+
+label{
+    padding-top:1em;
+    padding-bottom: 5px;
+    display: block;
+}
+
+#email-input{
+    width: 100%;
+    font-size: large;
+}
+
+textarea{
+    margin-bottom: 1em;
+    min-height: 5em;
+    width: 100%;
+    font-size: large;
+}
+
+
+#submit-btn{
+    width: 100%;
+    font-size: large;
+    background-color: green;
+    color: white;
+    padding: 10px;
+}

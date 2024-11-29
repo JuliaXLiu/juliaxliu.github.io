@@ -1,0 +1,139 @@
+a, p, span, input, button,option, div{
+    font-family: "Open Sans", sans-serif;
+}
+
+#topNavContainer a{
+    margin:15px;
+}
+
+#dashboardHeader{
+    color:#187474;
+    font-size: x-large;
+    margin: 10px 0;
+}
+
+.dashboard{
+    padding:15px 5%;
+    background-color: white;
+}
+
+.username{
+    color:#187474;
+    text-decoration: none;
+}
+
+.col{
+    display: grid;
+    grid-template-areas: "sidebar content";
+    grid-template-columns: 25% auto;
+    margin:20px 0;
+}
+
+.sidebar{
+    grid-area: sidebar;
+    width: 95%;
+    margin: 0 auto;
+
+}
+.sidebarItem{
+    margin-bottom: 20px;
+}
+.sideBarTitle img{
+    width: 20px;
+    padding-right: 5px;
+}
+
+.sideBarTitle{
+    padding: 20px;
+    border: #ccc 1px outset;
+}
+
+.sidebarBtn button {
+    background-color: white;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    padding-left: 30px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-size: medium;
+    border: #ccc 1px outset;
+
+}
+  
+.sidebarBtn button:hover {
+    background-color: #ccc;
+    color:#187474;
+}
+
+button.profileBtn{
+    border:none;
+}
+
+.floatRight{
+    float:right;
+    margin-right: -5px;
+}
+
+.title{
+    font-size: larger;
+}
+
+.content{
+    grid-area: content;
+}
+
+.listItem{
+    display: grid;
+    grid-template-areas: "img detail";
+    width: 95%;
+    margin:auto;
+    grid-template-columns: 150px auto;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+}
+
+.listItem:hover{
+    background-color: #f3f3f3;
+}
+
+.listItemImg{
+    grid-area:img;
+    width: 80%;
+    margin: 30px;
+}
+
+.listItemImg a, .listItemImg img{
+    display: block;
+    width: 100%;
+    margin:auto;
+}
+
+.listItemDetail{
+    grid-area: detail;
+    margin: 20px 50px;
+}
+
+.listItemDetail a{
+    color:#187474;
+    display: inline;
+}
+
+.itemAvailability{
+    margin: 5px 0;
+}
+
+.itemAvailability img{
+    width: 15px;
+}
+
+.itemAvailability a{
+    margin: 5px 0;
+}
+
+footer{
+    border-top: 2px solid #187474;
+}
