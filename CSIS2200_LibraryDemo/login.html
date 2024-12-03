@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login|Dream College Library</title>
     <link rel="stylesheet" href="css/login.css">
+    <script src="js/login.js"></script>
 </head>
 <body>
     <div class="loginContainer">
@@ -12,7 +13,7 @@
         <div id="loginCard">
             <section id="loginForm">
                 <h1>Login</h1>
-                <form action="search.html">
+                <form onsubmit="event.preventDefault(); login()">
                     <label for="username">Username:</label>
                     <br>
                     <input type="text" name="username" id="username" placeholder="College Network Access Username">
@@ -20,7 +21,7 @@
                     <br>
                     <label for="password">Password:</label>
                     <br>
-                    <input type="text" name="password" id="password" placeholder="Password">
+                    <input type="password" name="password" id="password" placeholder="Password" >
                     <br>
                     <a href="#">forget your password?</a>
                     <br>

@@ -82,9 +82,15 @@ header{
 
 .managementBtn:hover{
     background-color: white;
+    color:black;
 }
 
 .managementBtn:focus{
+    background-color: #002452;
+    color:white;
+}
+
+.focus{
     background-color: #002452;
     color:white;
 }
@@ -136,4 +142,45 @@ th{
 }
 td{
     padding: 5px;
+}
+
+.borrowReturnBtn{
+    text-align: center;
+}
+.borrowReturnBtn button{
+    width: 30%;
+    margin: 30px;
+    font-size: larger;
+    padding: 20px 0;
+}
+.borrowReturnBtn button img{
+    width: 30%;
+}
+
+.panels{
+    display: flex;
+}
+
+.infoPanel{
+    margin: 30px;
+}
+
+.hidden{
+    display: none;
+}
+
+.brFocus{
+    background-color: #eee;
+}
+
+.checkPanel{
+    margin:30px;
+}
+
+.operationBtnList label{
+    padding:20px;
+}
+
+.operationBtnList select{
+    padding: 0 10px;
 }

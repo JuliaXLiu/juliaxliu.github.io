@@ -64,9 +64,14 @@ a, p, span, input, button,option, div{
 
 }
   
-.sidebarBtn button:hover {
+ .sidebarBtn button:hover {
     background-color: #ccc;
     color:#187474;
+}
+
+.sidebarBtn .focus{
+    color:#187474;
+    background-color: #ddd;
 }
 
 button.profileBtn{
@@ -88,10 +93,10 @@ button.profileBtn{
 
 .listItem{
     display: grid;
-    grid-template-areas: "img detail";
+    grid-template-areas: "img detail info";
     width: 95%;
     margin:auto;
-    grid-template-columns: 150px auto;
+    grid-template-columns: 150px 5fr 2fr;
     background-color: #f1f1f1;
     border: 1px solid #ccc;
 }
@@ -136,4 +141,26 @@ button.profileBtn{
 
 footer{
     border-top: 2px solid #187474;
+}
+
+.borrowInfo{
+    grid-area: info;
+    margin: 30px auto;
+}
+
+.borrowInfo div{
+    margin: 10px 0;
+}
+
+.renewBtn{
+    width: 100%;
+    padding: 5px 0;
+    background-color: #187474;
+    color: white;
+    font-size: medium;
+    margin-top: 10px;
+}
+
+.borrowDate{
+    color: #187474;
 }

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search|Dream College Library</title>
+    <link rel="stylesheet" href="css/management.css">
+    <script src="js/login.js"></script>
+    <script src="js/bookFunctions.js"></script>
+</head>
+<body>
+    <header>
+        <div class="loginHeader"><a href="itemManagement.html">Library Management System</a></div>
+        <div class="headerBlank"></div>
+        <div class="buttonList">
+            <a href="index.html"><button type="button" class="headerBtn" id="homeBtn" onclick="">Home</button></a>
+            <a href=""><button type="button" class="headerBtn" id="accountBtn" onclick="">MyAccount</button></a>
+            <a href="login.html"><button type="button" class="headerBtn" id="logoutBtn" onclick="logout()">Logout</button></a>
+        </div>
+    </header>
+    <div class="dashboard">
+        <h3 id="dashboardHeader">Item Managmement</h3>
+        <span id="welcome">Good Morning, <a class="username" href="">Librarian</a>!</span>
+    </div>
+    <div class="operationBtnList">
+        
+    </div>
+    <div class="col">
+        <div class="managementBtnList">
+            <a href="itembr.html"><button type="button" class="managementBtn focus" id="brBtn" onclick="">Item Borrow/Return</button></a>
+            <a href="itemManagement.html"><button type="button" class="managementBtn" id="ItemBtn" onclick="">Item Management</button></a>
+            <a href=""><button type="button" class="managementBtn" id="transactionBtn" onclick="">Transaction Management</button></a>
+            <a href=""><button type="button" class="managementBtn" id="adminBtn" onclick="">Librarian Account<br> Management</button></a>
+            <a href="report.html"><button type="button" class="managementBtn" id="reportBtn" onclick="">Report</button></a>
+        </div>
+        <div class="contentCol">
+            <div class="borrowReturnBtn">
+                <button id="borrowBtn" class="brBtn" onclick="borrowBook()"><img src="src/icon/borrow.png" alt="" srcset=""><br>Borrow</button>
+                <button id="returnBtn" class="brBtn" onclick="returnBook()"><img src="src/icon/return.png" alt="" srcset=""><br>Return</button>
+            </div>
+            <div class="panels">
+                <div class="infoPanel">
+                    <form action="">
+                        <div id="useridText" class="useridText hidden">
+                            <label for="UserID">User ID:</label>
+                            <input type="text" name="userid" id="userid" placeholder="Enter User ID">
+                            <button onclick="show()">Enter</button>
+                            <br>
+                            <br>
+                        </div>
+                        <div id="bookidText" class="bookidText hidden">
+                            <label for="BookID">Book ID:</label>
+                            <input type="text" name="BookID" id="bookid" placeholder="Enter Book ID" >
+                            <button onclick="addBook()">Enter</button>
+                            <br>
+                            <br>
+                        </div>
+                        <input type="submit" class="hidden" id="submit-btn" value="Submit">
+                    </form>
+                </div>
+                <div class="checkPanel">
+                    <div id="result"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

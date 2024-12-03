@@ -135,6 +135,20 @@ header{
     color:#187474;
 }
 
+.apply{
+    background-color: #187474;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 80%;
+    text-align: center;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-size: larger;
+    margin: 20px;
+}
+
 .active{
     color:#187474;
 }
