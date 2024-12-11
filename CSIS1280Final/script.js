@@ -28,7 +28,7 @@ function CorrectDigit(num){
 function TimeUpdate(){
     let date = new Date();
     let year = date.getFullYear();
-    let month = CorrectDigit(date.getMonth());
+    let month = CorrectDigit(date.getMonth()+1);
     let day = CorrectDigit(date.getDate());
     let hour = CorrectDigit(date.getHours());
     let minute = CorrectDigit(date.getMinutes());
